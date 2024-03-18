@@ -1,0 +1,65 @@
+.form {
+  width: 1440px;
+  height: 496px;
+
+  background: #fff;
+}
+
+.form label:first-child {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 360px;
+  height: 72px;
+  margin-top: 36px;
+  margin-left: 156px;
+}
+
+input[type='number'][name='delay'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 0;
+  width: 360px;
+  height: 40px;
+}
+
+fieldset {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 48px;
+
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+
+  width: 360px;
+  height: 64px;
+  padding: 0px;
+  margin: 16px 0 0 156px;
+  /* margin-left: 156px; */
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  margin: 24px 0 0 156px;
+
+  font: 500 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+
+  color: #fff;
+  background: #4e75ff;
+}
