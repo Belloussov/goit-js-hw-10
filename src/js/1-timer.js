@@ -17,7 +17,6 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     userSelectedDate = selectedDates[0];
-    // interval = userSelectedDate - new Date();
 
     if (userSelectedDate <= Date.now()) {
       iziToast.error({
@@ -67,7 +66,7 @@ button.addEventListener('click', () => {
 
     button.classList.remove('button-active');
     if (interval < 1) {
-      clearInterval(interval);
+      clearInterval(intervalId);
       return;
     }
     const timer = convertMs(interval);
