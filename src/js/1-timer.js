@@ -69,10 +69,10 @@ button.addEventListener('click', () => {
       clearInterval(intervalId);
       return;
     }
-    const timer = convertMs(interval);
-    allDateFields[0].innerText = addLeadingZero(timer.days);
-    allDateFields[1].innerText = addLeadingZero(timer.hours);
-    allDateFields[2].innerText = addLeadingZero(timer.minutes);
-    allDateFields[3].innerText = addLeadingZero(timer.seconds);
+    const { days, hours, minutes, seconds } = convertMs(interval);
+    allDateFields[0].innerText = addLeadingZero(days);
+    allDateFields[1].innerText = addLeadingZero(hours);
+    allDateFields[2].innerText = addLeadingZero(minutes);
+    allDateFields[3].innerText = addLeadingZero(seconds);
   }, 1000);
 });
